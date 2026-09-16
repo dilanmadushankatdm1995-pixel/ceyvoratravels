@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Places to Visit in Sri Lanka | Ceyvora Travels Destination Guide</title>
+  <meta name="description" content="Explore top destinations in Sri Lanka: Sigiriya, Kandy, Ella, Galle Fort, Yala National Park, Mirissa, and Nuwara Eliya. Interactive map and local travel guides.">
+  <meta name="keywords" content="Sri Lanka destinations, places to visit Sri Lanka, Sigiriya Rock, Galle Fort, Ella Sri Lanka, Yala safari, Kandy Temple, Mirissa beach">
+  <meta property="og:title" content="Places to Visit in Sri Lanka | Ceyvora Travels">
+  <meta property="og:description" content="Interactive map and destination highlights for your dream Sri Lanka vacation.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Leaflet.js Map CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="badge-sltda"><i class="fa-solid fa-certificate"></i> SLTDA Certified Agency #TA/2026/0412</span>
+        <span class="top-bar-item"><i class="fa-solid fa-phone"></i> 24/7 Island Desk: +94 11 234 5678</span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-item"><i class="fa-brands fa-whatsapp text-accent"></i> WhatsApp: +94 77 987 6543</span>
+        <span class="top-bar-item"><i class="fa-solid fa-envelope"></i> inquiries@ceyvoratravels.com</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Ceyvora Travels Home">
+        <div class="brand-logo-icon">
+          <i class="fa-solid fa-umbrella-beach"></i>
+        </div>
+        <div>
+          CEYVORA<span>.</span>
+          <span class="brand-tagline">Sri Lanka Journeys</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="destinations.html" class="nav-link active">Destinations</a>
+        <a href="packages.html" class="nav-link">Tour Packages</a>
+        <a href="travel-info.html" class="nav-link">Travel Info</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-regular fa-paper-plane"></i> Plan My Trip</a>
+        <button class="mobile-toggle" aria-label="Open mobile navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-nav-header">
+      <span class="brand-logo" style="font-size: 1.3rem;">
+        <span class="brand-logo-icon" style="width:34px;height:34px;font-size:1rem;"><i class="fa-solid fa-umbrella-beach"></i></span>
+        CEYVORA
+      </span>
+      <button class="mobile-close-btn" aria-label="Close navigation">&times;</button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html"><span>Home</span> <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="about.html"><span>About Us</span> <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="destinations.html" class="active"><span>Places to Visit</span> <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="packages.html"><span>Tour Packages</span> <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="travel-info.html"><span>Travel Information</span> <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="gallery.html"><span>Gallery & Media</span> <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="contact.html"><span>Contact & Booking</span> <i class="fa-solid fa-chevron-right"></i></a>
+    </nav>
+    <div class="mobile-drawer-contact">
+      <p><strong>Direct Inquiries:</strong></p>
+      <p><i class="fa-brands fa-whatsapp text-green"></i> +94 77 987 6543</p>
+      <p><i class="fa-solid fa-envelope"></i> hello@ceyvoratravels.com</p>
+      <a href="contact.html" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Book a Free Consultation</a>
+    </div>
+  </aside>
+
+  <!-- Page Banner -->
+  <section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1800&q=80');">
+    <div class="banner-content">
+      <div class="banner-breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Destinations</span>
+      </div>
+      <h1 class="banner-title">Places to Visit in Sri Lanka</h1>
+      <p class="banner-subtitle">An island where eight UNESCO World Heritage Sites, mist-cloaked tea estates, wild animal sanctuaries, and turquoise surf breaks lie just a few hours apart.</p>
+    </div>
+  </section>
+
+  <!-- Interactive Map Section -->
+  <section class="section-padding bg-light" style="padding-bottom: 2rem;">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge"><i class="fa-solid fa-map"></i> Island Explorer</span>
+        <h2 class="section-title">Interactive Sri Lanka Destination Map</h2>
+        <p class="section-subtitle">Click any pin on the map to preview destination highlights, cultural context, and recommended tour itineraries.</p>
+      </div>
+
+      <div class="map-container-wrap">
+        <div id="sri-lanka-map" role="application" aria-label="Interactive Map of Sri Lanka"></div>
+        <div class="map-legend">
+          <div class="legend-item"><span class="legend-dot" style="background-color: #2b82cb;"></span> UNESCO Cultural Triangle</div>
+          <div class="legend-item"><span class="legend-dot" style="background-color: #2d6a4f;"></span> Hill Country & Tea Trails</div>
+          <div class="legend-item"><span class="legend-dot" style="background-color: #e76f51;"></span> Southern & Western Beaches</div>
+          <div class="legend-item"><span class="legend-dot" style="background-color: #d4a373;"></span> National Parks & Safaris</div>
+          <div class="legend-item"><span class="legend-dot" style="background-color: #0b2545;"></span> Capital & Island Concierge</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destination Cards Grid -->
+  <section class="section-padding bg-surface" style="padding-top: 2rem;">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge"><i class="fa-solid fa-compass"></i> Curated Catalog</span>
+        <h2 class="section-title">Discover Sri Lanka’s Top Regions</h2>
+        <p class="section-subtitle">Each corner of the island possesses a distinct microclimate, unique heritage, and unforgettable encounters.</p>
+      </div>
+
+      <div class="destinations-grid">
+        <!-- Sigiriya -->
+        <article class="destination-card" id="sigiriya">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1588598198321-9735fd52455b?auto=format&fit=crop&w=800&q=80" alt="Sigiriya Lion Rock Fortress" loading="lazy">
+            <span class="card-region-badge">Cultural Triangle</span>
+            <span class="card-rating-badge"><i class="fa-solid fa-star"></i> 4.9</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-row">
+              <span><i class="fa-regular fa-clock"></i> Ideal: 2 - 3 Days</span>
+              <span><i class="fa-solid fa-sun"></i> Best: Nov - May</span>
+            </div>
+            <h3 class="card-title">Sigiriya Rock Fortress</h3>
+            <p class="card-description">A world-renowned 5th-century palace citadel standing high upon a solitary rock. Marvel at the preserved 1,500-year-old maiden frescoes, the mirrored wall with ancient Sinhala graffiti, and the colossal stone lion paws guarding the summit staircase.</p>
+            <div class="card-highlights">
+              <span class="highlight-chip">UNESCO Heritage</span>
+              <span class="highlight-chip">Pidurangala Sunrise</span>
+              <span class="highlight-chip">Royal Water Gardens</span>
+            </div>
+            <div class="card-footer">
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fa-solid fa-route text-accent"></i> Included in 4 Packages</span>
+              <a href="packages.html?dest=sigiriya" class="card-link">View Packages <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Kandy -->
+        <article class="destination-card" id="kandy">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1620619767323-b95a89183081?auto=format&fit=crop&w=800&q=80" alt="Temple of the Tooth Relic in Kandy" loading="lazy">
+            <span class="card-region-badge">Central Highlands</span>
+            <span class="card-rating-badge"><i class="fa-solid fa-star"></i> 4.8</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-row">
+              <span><i class="fa-regular fa-clock"></i> Ideal: 2 Days</span>
+              <span><i class="fa-solid fa-sun"></i> Best: Dec - April</span>
+            </div>
+            <h3 class="card-title">Kandy Sacred Cultural Capital</h3>
+            <p class="card-description">The last royal capital of ancient kings nestled around a picturesque lake. Houses Sri Dalada Maligawa (Temple of the Sacred Tooth Relic), the world-famous Peradeniya Royal Botanic Gardens, and the mesmerizing annual Esala Perahera pageant.</p>
+            <div class="card-highlights">
+              <span class="highlight-chip">Tooth Relic Temple</span>
+              <span class="highlight-chip">Royal Botanical Gardens</span>
+              <span class="highlight-chip">Traditional Drumming</span>
+            </div>
+            <div class="card-footer">
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fa-solid fa-route text-accent"></i> Included in 5 Packages</span>
+              <a href="packages.html?dest=kandy" class="card-link">View Packages <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Ella -->
+        <article class="destination-card" id="ella">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=800&q=80" alt="Nine Arches Bridge Ella Sri Lanka" loading="lazy">
+            <span class="card-region-badge">Hill Country</span>
+            <span class="card-rating-badge"><i class="fa-solid fa-star"></i> 4.9</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-row">
+              <span><i class="fa-regular fa-clock"></i> Ideal: 3 - 4 Days</span>
+              <span><i class="fa-solid fa-sun"></i> Best: Jan - March</span>
+            </div>
+            <h3 class="card-title">Ella & Nine Arches Bridge</h3>
+            <p class="card-description">A scenic mountain village encircled by verdant tea valleys, misty mountain passes, and waterfalls. Walk the famous colonial Demodara Nine Arches viaduct, trek to Little Adam's Peak, and experience the legendary blue train voyage from Kandy.</p>
+            <div class="card-highlights">
+              <span class="highlight-chip">Scenic Train Ride</span>
+              <span class="highlight-chip">Ravana Waterfall</span>
+              <span class="highlight-chip">Ella Rock Trek</span>
+            </div>
+            <div class="card-footer">
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fa-solid fa-route text-accent"></i> Included in 4 Packages</span>
+              <a href="packages.html?dest=ella" class="card-link">View Packages <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Galle Fort -->
+        <article class="destination-card" id="galle">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=800&q=80" alt="Galle Fort Lighthouse on the Indian Ocean" loading="lazy">
+            <span class="card-region-badge">Southern Coast</span>
+            <span class="card-rating-badge"><i class="fa-solid fa-star"></i> 4.8</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-row">
+              <span><i class="fa-regular fa-clock"></i> Ideal: 2 - 3 Days</span>
+              <span><i class="fa-solid fa-sun"></i> Best: Nov - April</span>
+            </div>
+            <h3 class="card-title">Galle Dutch Fort</h3>
+            <p class="card-description">A UNESCO World Heritage maritime fortress built by the Portuguese and expanded by the Dutch in the 1600s. Explore pedestrian cobblestone lanes filled with jeweler boutiques, artisanal gelato shops, colonial churches, and sunset ocean ramparts.</p>
+            <div class="card-highlights">
+              <span class="highlight-chip">Fort Ramparts</span>
+              <span class="highlight-chip">Ocean Lighthouse</span>
+              <span class="highlight-chip">Colonial Boutiques</span>
+            </div>
+            <div class="card-footer">
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fa-solid fa-route text-accent"></i> Included in 5 Packages</span>
+              <a href="packages.html?dest=galle" class="card-link">View Packages <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Yala National Park -->
+        <article class="destination-card" id="yala">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=800&q=80" alt="Leopard in Yala National Park Sri Lanka" loading="lazy">
+            <span class="card-region-badge">Wildlife & Safari</span>
+            <span class="card-rating-badge"><i class="fa-solid fa-star"></i> 4.9</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-row">
+              <span><i class="fa-regular fa-clock"></i> Ideal: 2 Days</span>
+              <span><i class="fa-solid fa-sun"></i> Best: Feb - July</span>
+            </div>
+            <h3 class="card-title">Yala National Park</h3>
+            <p class="card-description">Sri Lanka’s flagship safari destination, boasting the world’s highest density of Sri Lankan leopards (Panthera pardus kotiya). Traverse rugged scrub forests, granite rock outcrops, and coastal lagoons teeming with wild elephants, crocodiles, and hornbills.</p>
+            <div class="card-highlights">
+              <span class="highlight-chip">Leopard Tracking</span>
+              <span class="highlight-chip">Asian Elephants</span>
+              <span class="highlight-chip">Sloth Bears</span>
+            </div>
+            <div class="card-footer">
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fa-solid fa-route text-accent"></i> Included in 3 Packages</span>
+              <a href="packages.html?dest=yala" class="card-link">View Packages <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mirissa & Southern Beaches -->
+        <article class="destination-card" id="mirissa">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Mirissa Beach Palm Trees and Turquoise Sea" loading="lazy">
+            <span class="card-region-badge">Beaches & Marine</span>
+            <span class="card-rating-badge"><i class="fa-solid fa-star"></i> 4.8</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-row">
+              <span><i class="fa-regular fa-clock"></i> Ideal: 3 - 5 Days</span>
+              <span><i class="fa-solid fa-sun"></i> Best: Nov - April</span>
+            </div>
+            <h3 class="card-title">Mirissa & Weligama Bay</h3>
+            <p class="card-description">A crescent-shaped tropical haven famous for sunrise blue whale excursions, the iconic Coconut Tree Hill viewpoint, beachfront seafood grills under lanterns, and beginner-friendly surfing waves along Weligama's sandy floor.</p>
+            <div class="card-highlights">
+              <span class="highlight-chip">Blue Whale Cruises</span>
+              <span class="highlight-chip">Coconut Tree Hill</span>
+              <span class="highlight-chip">Stilt Fishermen</span>
+            </div>
+            <div class="card-footer">
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fa-solid fa-route text-accent"></i> Included in 4 Packages</span>
+              <a href="packages.html?dest=mirissa" class="card-link">View Packages <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Nuwara Eliya -->
+        <article class="destination-card" id="nuwara-eliya">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80" alt="Nuwara Eliya Tea Gardens Sri Lanka" loading="lazy">
+            <span class="card-region-badge">Tea Country</span>
+            <span class="card-rating-badge"><i class="fa-solid fa-star"></i> 4.7</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-row">
+              <span><i class="fa-regular fa-clock"></i> Ideal: 2 Days</span>
+              <span><i class="fa-solid fa-sun"></i> Best: Feb - May</span>
+            </div>
+            <h3 class="card-title">Nuwara Eliya ("Little England")</h3>
+            <p class="card-description">Perched at 1,868m elevation, this cool retreat features manicured Tudor-style mansions, high-altitude Ceylon tea factories, boat rides on Lake Gregory, and the dramatic precipice of World’s End at Horton Plains National Park.</p>
+            <div class="card-highlights">
+              <span class="highlight-chip">Highland Tea Tasting</span>
+              <span class="highlight-chip">Horton Plains</span>
+              <span class="highlight-chip">Colonial Architecture</span>
+            </div>
+            <div class="card-footer">
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fa-solid fa-route text-accent"></i> Included in 3 Packages</span>
+              <a href="packages.html?dest=nuwara-eliya" class="card-link">View Packages <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Trincomalee -->
+        <article class="destination-card" id="trincomalee">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Trincomalee Coast and Pigeon Island Marine Reserve" loading="lazy">
+            <span class="card-region-badge">East Coast</span>
+            <span class="card-rating-badge"><i class="fa-solid fa-star"></i> 4.8</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-row">
+              <span><i class="fa-regular fa-clock"></i> Ideal: 3 - 4 Days</span>
+              <span><i class="fa-solid fa-sun"></i> Best: May - Oct</span>
+            </div>
+            <h3 class="card-title">Trincomalee & Pigeon Island</h3>
+            <p class="card-description">The jewel of Sri Lanka’s eastern shores, home to Nilaveli’s powder-soft beaches, vibrant coral snorkeling with blacktip reef sharks at Pigeon Island National Park, and the cliffside Hindu shrine of Koneswaram Kovil overlooking Swami Rock.</p>
+            <div class="card-highlights">
+              <span class="highlight-chip">Pigeon Island Coral</span>
+              <span class="highlight-chip">Koneswaram Temple</span>
+              <span class="highlight-chip">Nilaveli Beach</span>
+            </div>
+            <div class="card-footer">
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fa-solid fa-route text-accent"></i> Summer East Coast Tour</span>
+              <a href="packages.html?dest=trincomalee" class="card-link">View Packages <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dambulla -->
+        <article class="destination-card" id="dambulla">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Dambulla Cave Temple Buddha Statues" loading="lazy">
+            <span class="card-region-badge">Cultural Triangle</span>
+            <span class="card-rating-badge"><i class="fa-solid fa-star"></i> 4.9</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-row">
+              <span><i class="fa-regular fa-clock"></i> Ideal: Half Day</span>
+              <span><i class="fa-solid fa-sun"></i> Best: Year-Round</span>
+            </div>
+            <h3 class="card-title">Dambulla Royal Cave Temple</h3>
+            <p class="card-description">The largest and best-preserved cave temple complex in Sri Lanka. Five cavern sanctuaries carved into a massive granite ridge contain 153 Buddha statues, exquisite ceiling murals, and statues of ancient Sri Lankan monarchs dating back to the 1st century BC.</p>
+            <div class="card-highlights">
+              <span class="highlight-chip">UNESCO Sanctuary</span>
+              <span class="highlight-chip">Golden Temple</span>
+              <span class="highlight-chip">Ancient Murals</span>
+            </div>
+            <div class="card-footer">
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fa-solid fa-route text-accent"></i> Included in 5 Packages</span>
+              <a href="packages.html?dest=dambulla" class="card-link">View Packages <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destination FAQs -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge"><i class="fa-solid fa-circle-question"></i> Island Advice</span>
+        <h2 class="section-title">Frequently Asked Destination Questions</h2>
+        <p class="section-subtitle">Helpful insights for navigating Sri Lanka's regions and seasonal climates.</p>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>Can I visit Sri Lanka at any time of the year?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Sri Lanka enjoys a dual-monsoon climate. When the southwest experiences rain (May to September), the north and east coasts (Trincomalee, Passikudah, Jaffna) are sunny and dry. When the northeast monsoon arrives (October to January), the southern and western beaches (Galle, Mirissa, Bentota) enjoy golden, calm seas. There is always a sunlit beach in Sri Lanka!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do we travel between distant destinations?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>With Ceyvora Travels, you will be accompanied by your dedicated private air-conditioned vehicle and licensed chauffeur guide throughout your trip. For the world-famous mountain route between Kandy and Ella, we pre-book reserved observation-class train tickets while your driver transports your luggage ahead to your hotel.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How many days are needed to see the island highlights?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We recommend a minimum of 7 to 8 days for the classic highlights (Cultural Triangle, Kandy, Ella, and Galle). For travelers seeking leopard safaris, whale watching, and beach relaxation, 10 to 14 days allows a relaxed, enjoyable pace without rushed travel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color:#ffffff; margin-bottom: 1.25rem;">
+            <div class="brand-logo-icon">
+              <i class="fa-solid fa-umbrella-beach"></i>
+            </div>
+            CEYVORA<span>.</span>
+          </a>
+          <p>Ceyvora Travels is a fully licensed Sri Lankan Destination Management Company dedicated to authentic, sustainable, and tailor-made luxury journeys across the teardrop island.</p>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://tripadvisor.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TripAdvisor"><i class="fa-solid fa-feather"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore Ceyvora</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us & Team</a></li>
+            <li><a href="destinations.html"><i class="fa-solid fa-angle-right"></i> Sri Lanka Destinations</a></li>
+            <li><a href="packages.html"><i class="fa-solid fa-angle-right"></i> Tour Packages</a></li>
+            <li><a href="travel-info.html"><i class="fa-solid fa-angle-right"></i> Travel Information & ETA</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Photo & Video Gallery</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Booking</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Official Sri Lanka Links</h4>
+          <ul class="footer-links footer-official-links">
+            <li><a href="https://www.sltda.gov.lk/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> SLTDA Official Portal</a></li>
+            <li><a href="https://www.srilanka.travel/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Sri Lanka Tourism Bureau</a></li>
+            <li><a href="https://www.eta.gov.lk/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Online Visa (ETA) Portal</a></li>
+            <li><a href="https://railway.gov.lk/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Sri Lanka Railways Official</a></li>
+            <li><a href="http://www.dwc.gov.lk/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Wildlife Conservation Dept</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h4>Island Newsletter</h4>
+          <p>Subscribe for seasonal Sri Lanka wildlife alerts, cultural festival dates, and exclusive early-bird offers.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Ceyvora Travels Island Dispatch!'); this.reset();">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+          <p style="font-size: 0.8rem; color: #64748b;"><i class="fa-solid fa-lock"></i> We respect your privacy. Unsubscribe anytime.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ceyvora Travels (Pvt) Ltd. All Rights Reserved. Reg No: PV-00249811. Sri Lanka Tourism Development Authority License TA/2026/0412.</p>
+        <p class="footer-attribution">
+          Photography sourced via Unsplash (Sri Lanka tourism contributors: Dylan Shaw, Hendrik Cornelissen, Tharoushan Kandarajah).
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/94779876543?text=Hello%20Ceyvora%20Travels,%20I%20would%20like%20to%20inquire%20about%20a%20Sri%20Lanka%20tour." class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Leaflet.js Map Library -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
